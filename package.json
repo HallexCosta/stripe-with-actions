@@ -1,0 +1,19 @@
+{
+  "name": "hallexcosta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "install:ci": "yarn install --fronzen-lockfile",
+    "clean:customers": "node -r dotenv/config delete-customers.js",
+    "test": "mocha -r dotenv/config --config .mocharc.js stripe.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "stripe": "^8.171.0"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "mocha": "^9.1.0"
+  }
+}
