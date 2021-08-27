@@ -30,4 +30,4 @@ jobs:
       - name: Testing server...
         run: yarn test
         env:
-          STRIPE_SECRET_API_KEY: ${{ secrets.STRIPE_SECRET_API_KEY }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
