@@ -28,6 +28,6 @@ jobs:
         run: yarn install:ci
 
       - name: Testing server...
-        run: yarn test:ci
+        run: yarn test
         env:
           STRIPE_SECRET_API_KEY: ${{ secrets.STRIPE_SECRET_API_KEY }}
